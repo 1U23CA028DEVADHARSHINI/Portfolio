@@ -523,3 +523,47 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 90%;
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-card {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+
+  .hero-right img {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .hero-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+}
