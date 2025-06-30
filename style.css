@@ -702,7 +702,16 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .card {
+  .skill-card {
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.skills-card {
   width: 90%;
   margin: 10px auto;
   padding: 20px;
