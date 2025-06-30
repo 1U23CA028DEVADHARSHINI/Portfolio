@@ -516,3 +516,18 @@ body {
     padding: 10px 20px;
   }
 }
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .skill-card {
+    max-width: 100%;
+  }
+
+  .btn-back {
+    width: 90%;
+  }
+}
