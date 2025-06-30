@@ -780,3 +780,25 @@ p {
   }
 }
 
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+
+  .skill-card {
+    max-width: 100%;
+  }
+
+  .skill-icon {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .btn-back {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+
