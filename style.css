@@ -319,48 +319,7 @@ body {
   padding: 0;
 }
 
-.skill-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.skills-card {
-  margin-right:50px;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 30px 20px;
-  width: 300px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
- justify-content: center; /* Vertical center */
-  align-items: center;   
-  
-}
-
-.skills-card:hover {
-  transform: translateY(-10px);
-}
-
-.skills-icon {
-  height: 60px;
-  margin-bottom: 15px;
-}
-
-.skills-card h4 {
-  margin: 10px 0 5px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #222;
-  
-}
-
-.skills-card p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.6;
-  margin-top: 10px;
-}
 
 .contact-section {
   padding: 80px 20px;
@@ -452,76 +411,189 @@ body {
   color: #bbb;
 }
 
-/* 📱 Small Devices (Phones) */
-@media (max-width: 600px) {
-  .skills-grid {
+/* Tablet and below */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
     flex-direction: column;
-    gap: 20px;
-    padding: 0 10px;
+    align-items: flex-start;
   }
 
-  .skill-card {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .hero-left, .hero-right {
+    flex: 1 1 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-right img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
     width: 90%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    height: auto;
   }
 
-  .skill-icon {
-    width: 80px;
-    height: 80px;
+  .about-section {
+    margin: 30px 10px;
+    padding: 40px 10px;
   }
 
-  .skill-card h4 {
-    font-size: 16px;
-  }
-
-  .btn-back {
-    width: 90%;
-    font-size: 14px;
+  .btn {
+    padding: 10px 20px;
   }
 }
 
-/* 💻 Medium Devices (Tablets) */
-@media (min-width: 601px) and (max-width: 991px) {
-  .skills-grid {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    padding: 0 20px;
+/* Mobile devices */
+@media (max-width: 480px) {
+  html {
+    font-size: 90%;
   }
 
-  .skill-card {
-    width: 45%;
-    max-width: 300px;
-    margin: 10px auto;
+  .navbar {
+    padding: 10px 15px;
   }
 
-  .skill-icon {
-    width: 90px;
-    height: 90px;
+  .hero-left h1 {
+    font-size: 1.8rem;
   }
 
-  .btn-back {
-    font-size: 15px;
-  }
-}
-
-/* 🖥️ Large Devices (Desktops) */
-@media (min-width: 992px) {
-  .skills-grid {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 0 40px;
-  }
-
-  .skill-card {
+  .hero-right img {
     width: 220px;
+    height: 220px;
   }
 
-  .skill-icon {
-    width: 100px;
-    height: 100px;
+  .nav-links {
+    right: 10px;
+    top: 50px;
+    width: 90%;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 90%;
+  }
+
+  .navbar {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 16px;
+    border-radius: 8px;
+    display: none;
+    z-index: 1001;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: 1 1 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-right img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .about-section {
+    padding: 40px 16px;
+    margin: 20px 10px;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+
