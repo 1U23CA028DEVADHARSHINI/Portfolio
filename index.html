@@ -10,7 +10,8 @@
    
 
     <nav class="navbar">
-         
+        <div class="menu-icon">&#9776;</div> <!-- Hamburger icon -->
+
         <div class="logo">DEVADHARSHINI VENGATAJALAPATHI</div>
         <input type="checkbox" id="menu-toggle" hidden>
         <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
@@ -43,13 +44,14 @@
         </section>
     </div>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal().reveal('.hero-left', { origin: 'left', distance: '50px', duration: 1000, delay: 300 });
-        ScrollReveal().reveal('.hero-right', { origin: 'right', distance: '50px', duration: 1000, delay: 500 });
-        ScrollReveal().reveal('.navbar', { origin: 'top', distance: '20px', duration: 800, delay: 200 });
-        ScrollReveal().reveal('.about-img', { origin: 'left', distance: '50px', duration: 1000, delay: 200 });
-        ScrollReveal().reveal('.about-content', { origin: 'right', distance: '50px', duration: 1000, delay: 300 });
-    </script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
     </body>
 </html>
