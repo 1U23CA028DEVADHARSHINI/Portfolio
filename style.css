@@ -74,8 +74,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
-  min-height: 100vh;
+  padding: 80px 10% 60px 10%;
 }
 
 .hero-left {
